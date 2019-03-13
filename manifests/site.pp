@@ -1,7 +1,7 @@
 node default {
-	file {'/root/README':
-		ensure  => file,
-		content => 'This is my readme file',
-		owner   => 'root',
-	}
+
+}
+
+node 'docker.example.com' {
+  include role::master_server
 }
